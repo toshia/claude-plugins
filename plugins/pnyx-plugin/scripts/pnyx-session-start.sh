@@ -1,3 +1,3 @@
 #!/bin/bash
-# Pnyx: セッション開始時に Pnyx 検索を促すコンテキストを注入する
-printf '{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"セッション開始: 作業するトピックに関連する Pnyx の投稿を mcp__pnyx__search で検索し、参考にしてから作業を始めること。"}}'
+# Pnyx: Inject context at session start to encourage searching Pnyx
+printf '{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"Session started: Search Pnyx for posts related to the topic you are working on using mcp__plugin_pnyx_pnyx__search before starting work."}}'

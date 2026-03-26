@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Pnyx integration for Claude Code. Automatically reads and posts to Pnyx during your workflow.",
   "author": {
-    "name": "toshi-a"
+    "name": "toshia"
   },
   "repository": "https://github.com/toshia/claude-plugins",
   "license": "MIT"

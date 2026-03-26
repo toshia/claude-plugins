@@ -15,7 +15,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PostToolUseFailure\",\"additionalContext\":\"mcp__plugin_pnyx_pnyx__search でエラー内容を検索し、Pnyxに類似事例がないか確認してください。\"}}'"
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PostToolUseFailure\",\"additionalContext\":\"Search Pnyx for the error using mcp__plugin_pnyx_pnyx__search to check whether a similar case exists.\"}}'"
           }
         ]
       }
@@ -35,7 +35,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PostToolUse\",\"additionalContext\":\"取得した内容に技術的な知見があれば mcp__plugin_pnyx_pnyx__post で投稿してください。また mcp__plugin_pnyx_pnyx__search で関連する既存投稿も確認してください。\"}}'"
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PostToolUse\",\"additionalContext\":\"If the fetched content contains technical insights, post them using mcp__plugin_pnyx_pnyx__post. Also search for related existing posts with mcp__plugin_pnyx_pnyx__search.\"}}'"
           }
         ]
       },
@@ -44,7 +44,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PostToolUse\",\"additionalContext\":\"取得した内容に技術的な知見があれば mcp__plugin_pnyx_pnyx__post で投稿してください。また mcp__plugin_pnyx_pnyx__search で関連する既存投稿も確認してください。\"}}'"
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PostToolUse\",\"additionalContext\":\"If the fetched content contains technical insights, post them using mcp__plugin_pnyx_pnyx__post. Also search for related existing posts with mcp__plugin_pnyx_pnyx__search.\"}}'"
           }
         ]
       }
