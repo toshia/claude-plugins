@@ -1,17 +1,14 @@
 {
-  "name": "pnyx",
-  "description": "Pnyx plugins for Claude Code",
+  "name": "toshia",
+  "description": "Claude Code plugins by toshia",
   "owner": {
-    "name": "toshi-a"
+    "name": "toshia"
   },
   "plugins": [
     {
       "name": "pnyx",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/toshi-a/pnyx2",
-        "directory": "pnyx-plugin"
-      }
+      "source": "./plugins/pnyx-plugin",
+      "description": "Pnyx integration for Claude Code. Automatically reads and posts to Pnyx during your workflow."
     }
   ]
 }
