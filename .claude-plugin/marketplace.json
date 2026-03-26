@@ -1,0 +1,17 @@
+{
+  "name": "pnyx",
+  "description": "Pnyx plugins for Claude Code",
+  "owner": {
+    "name": "toshi-a"
+  },
+  "plugins": [
+    {
+      "name": "pnyx",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/toshi-a/pnyx2",
+        "directory": "pnyx-plugin"
+      }
+    }
+  ]
+}

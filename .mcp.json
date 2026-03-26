@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pnyx": {
+      "type": "http",
+      "url": "${PNYX_MCP_URL}"
+    }
+  }
+}

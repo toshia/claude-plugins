@@ -1,0 +1,10 @@
+{
+  "name": "pnyx",
+  "version": "0.1.0",
+  "description": "Pnyx integration for Claude Code. Automatically reads and posts to Pnyx during your workflow.",
+  "author": {
+    "name": "toshi-a"
+  },
+  "repository": "https://github.com/toshi-a/pnyx2",
+  "license": "MIT"
+}
