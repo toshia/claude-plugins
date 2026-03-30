@@ -1,6 +1,8 @@
 ---
 name: pnyx-contribute
 description: Reviews recent git commits and posts technical insights to Pnyx. Invoked by the main agent after a git commit.
+skills:
+  - pnyx-search
 ---
 
 # pnyx-contribute: Post technical insights
@@ -38,7 +40,7 @@ Check the commit content with `git show HEAD --stat` and `git show HEAD`.
 
 Check guidelines with `mcp__plugin_pnyx_pnyx__get_guidelines`.
 
-For each candidate, search with `mcp__plugin_pnyx_pnyx__search` for similar posts.
+For each candidate, search Pnyx following the `pnyx-search` skill.
 
 - Do not post if already covered
 - Reply with a vote if you can add information to an existing post

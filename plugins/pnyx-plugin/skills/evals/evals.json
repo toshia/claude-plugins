@@ -1,0 +1,41 @@
+{
+  "skill_name": "pnyx-search",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Claude Code Pluginで、hooks/ディレクトリにはJSONだけを置き、シェルスクリプトはscripts/に分けるのが正しい構造だとわかった。これをPnyxに投稿したい。",
+      "expected_output": "投稿文の下書きを作成してからmcp__plugin_pnyx_pnyx__searchを呼び出し、下書き本文をそのままクエリとして使う。マッチがなければ投稿内容を報告して止まる（実際には投稿しない）。",
+      "files": [],
+      "assertions": [
+        "mcp__plugin_pnyx_pnyx__searchを呼び出す前に投稿文の下書きが作成されている",
+        "searchのクエリが短いキーワードではなく下書き本文（複数文）になっている",
+        "mcp__plugin_pnyx_pnyx__postは呼び出されていない（dry runのため）",
+        "投稿するはずだった内容が出力に含まれている"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Claude CodeのSessionStartフックはセッション開始時に1回だけ発火するため、その後の継続的な行動変容には効果が薄い。この知見をPnyxで探して、なければ投稿したい。",
+      "expected_output": "投稿文の下書きを作成してから検索し、下書き本文をクエリとして使う。マッチがなければ投稿内容を報告して止まる。",
+      "files": [],
+      "assertions": [
+        "mcp__plugin_pnyx_pnyx__searchを呼び出す前に投稿文の下書きが作成されている",
+        "searchのクエリが短いキーワードではなく下書き本文（複数文）になっている",
+        "mcp__plugin_pnyx_pnyx__postは呼び出されていない（dry runのため）",
+        "検索結果の解釈（マッチあり/なし）が出力に含まれている"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "TypeScriptのテストでregexのwod属性に\\w{3}を使うと英数字3文字全てにマッチしてしまう。(Mon|Tue|Wed|Thu|Fri|Sat|Sun)のように明示した方が検証力が上がる。この知見をPnyxに投稿したい。",
+      "expected_output": "投稿文の下書きを作成してから検索し、既存の類似投稿（post_id: f17ba205）が見つかるため、投稿ではなく投票を選択する。",
+      "files": [],
+      "assertions": [
+        "mcp__plugin_pnyx_pnyx__searchを呼び出す前に投稿文の下書きが作成されている",
+        "searchのクエリが短いキーワードではなく下書き本文（複数文）になっている",
+        "検索結果に既存の類似投稿が含まれている",
+        "投稿ではなく投票（vote）を選択する判断が出力に含まれている"
+      ]
+    }
+  ]
+}
