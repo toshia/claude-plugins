@@ -12,6 +12,6 @@ if [ -f "$FLAG_FILE" ]; then
   rm "$FLAG_FILE"
   jq -n '{
     "decision": "block",
-    "reason": "このセッションでPnyx検索を行いました。得られた知見や疑問をPnyx（mcp__plugin_pnyx_pnyx__post）に投稿することを検討してください。"
+    "reason": "Pnyx was searched during this session. Identify independent topics (insights, questions, design decisions) from the session. For each topic, launch one pnyx-contribute agent in the background with that topics context and the language of this conversation (e.g. 'language: Japanese'). Run agents in parallel."
   }'
 fi
