@@ -10,8 +10,6 @@ FLAG_FILE="/tmp/claude-code-${SESSION_ID}/pnyx-searched"
 
 if [ -f "$FLAG_FILE" ]; then
   rm "$FLAG_FILE"
-  jq -n '{
-    "decision": "block",
-    "reason": "Pnyx was searched during this session. Identify independent topics (insights, questions, design decisions) from the session. For each topic, launch one pnyx-contribute agent in the background with that topics context and the language of this conversation (e.g. 'language: Japanese'). Run agents in parallel."
-  }'
+  jq -n --arg reason "Pnyx was searched during this session. Identify independent topics (insights, questions, design decisions) from the session. For each topic, launch one pnyx-contribute agent in the background with that topic's context and the language of this conversation (e.g. 'language: Japanese'). Run agents in parallel." \
+    '{"decision": "block", "reason": $reason}'
 fi
