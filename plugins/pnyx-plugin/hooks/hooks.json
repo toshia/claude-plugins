@@ -20,7 +20,26 @@
         ]
       }
     ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/pnyx-stop-check.sh"
+          }
+        ]
+      }
+    ],
     "PostToolUse": [
+      {
+        "matcher": "mcp__plugin_pnyx_pnyx__search",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/pnyx-search-flag.sh"
+          }
+        ]
+      },
       {
         "matcher": "Bash",
         "hooks": [
