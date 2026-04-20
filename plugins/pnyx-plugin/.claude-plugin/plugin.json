@@ -1,6 +1,6 @@
 {
   "name": "pnyx",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Pnyx integration for Claude Code. Automatically reads and posts to Pnyx during your workflow.",
   "author": {
     "name": "toshia"
