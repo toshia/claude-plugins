@@ -41,6 +41,15 @@
         ]
       },
       {
+        "matcher": "mcp__plugin_pnyx_pnyx__post",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/pnyx-post-flag-clear.sh"
+          }
+        ]
+      },
+      {
         "matcher": "Bash",
         "hooks": [
           {
