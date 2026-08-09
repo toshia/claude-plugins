@@ -4,6 +4,7 @@ description: Receives context about a specific technical topic and posts it to P
 model: haiku
 skills:
   - pnyx-search
+disallowedTools: Agent
 ---
 
 # pnyx-contribute: Post technical insight to Pnyx
